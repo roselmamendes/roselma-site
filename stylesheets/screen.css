@@ -1,0 +1,240 @@
+/* line 6, ../sass/screen.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/screen.scss */
+.date-post {
+  color: #aaa;
+  font-weight: 300;
+}
+/* line 12, ../sass/screen.scss */
+.date-post.text {
+  text-align: right;
+  padding-right: 1em;
+}
+
+/* line 18, ../sass/screen.scss */
+.img-header {
+  position: relative;
+  left: 18px;
+  width: 900px;
+  height: 200px;
+  padding-bottom: 1em;
+}
+
+/* line 26, ../sass/screen.scss */
+.right-side {
+  float: right;
+  padding-right: 2em;
+}
+/* line 30, ../sass/screen.scss */
+.right-side .profile {
+  width: 105px;
+  height: 100px;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 39, ../sass/screen.scss */
+.right-side .name {
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: darksalmon;
+}
+/* line 47, ../sass/screen.scss */
+.right-side .about {
+  color: gainsboro;
+  font-size: 0em;
+}
+/* line 52, ../sass/screen.scss */
+.right-side .icons {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  color: darksalmon;
+  text-align: center;
+}
+/* line 61, ../sass/screen.scss */
+.right-side hr {
+  border: 1px solid darksalmon;
+}
+/* line 65, ../sass/screen.scss */
+.right-side .fa.fa-home {
+  padding-top: 0.5em;
+  font-size: 2em;
+  color: darksalmon;
+}
+
+/* line 73, ../sass/screen.scss */
+.main-page {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* line 83, ../sass/screen.scss */
+.timeline {
+  border-right: thick dashed darksalmon;
+  float: left;
+  margin: 0px auto;
+  max-width: 44em;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  list-style-type: none;
+}
+/* line 94, ../sass/screen.scss */
+.timeline .ad {
+  display: block;
+  background: rgba(50, 50, 50, 0.5);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 800;
+  border-bottom: 2px solid black;
+  border-top: 2px solid black;
+}
+/* line 106, ../sass/screen.scss */
+.timeline a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+    elements 1,(2),3,(4), etc.
+    elements in brackets inherit these properties, some are overridden below (2n)
+    beginning at 0
+  */
+/* line 117, ../sass/screen.scss */
+.event {
+  position: relative;
+  text-align: center;
+  float: right;
+  clear: right;
+  width: 45%;
+  margin: 1em 2.5%;
+  border-radius: 5px;
+  list-style-type: none;
+  display: block;
+  padding: .4em;
+  background: white;
+  z-index: 15;
+  color: #4d4d4d;
+  border-left: 4px solid darksalmon;
+  border-right: 4px solid darksalmon;
+  text-decoration: none;
+  -webkit-transition: background .15s linear;
+  -moz-transition: background .15s linear;
+  -ms-transition: background .15s linear;
+  -o-transition: background .15s linear;
+  transition: background .15s linear;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+/* line 146, ../sass/screen.scss */
+.event.featured {
+  width: 95% !important;
+}
+/* line 148, ../sass/screen.scss */
+.event.featured:after, .event.featured:before {
+  display: none;
+}
+@media all and (max-width: 600px) {
+  /* line 117, ../sass/screen.scss */
+  .event {
+    width: 85%;
+  }
+}
+/* line 157, ../sass/screen.scss */
+.event.offset-first {
+  margin-top: -1.5em !important;
+}
+/* line 161, ../sass/screen.scss */
+.event img {
+  margin-top: 10px;
+  max-width: 100%;
+}
+/* line 166, ../sass/screen.scss */
+.event:nth-of-type(2n) {
+  float: left;
+  clear: left;
+}
+@media all and (min-width: 600px) {
+  /* line 166, ../sass/screen.scss */
+  .event:nth-of-type(2n) {
+    margin-top: 2em;
+  }
+}
+@media all and (min-width: 650px) {
+  /* line 174, ../sass/screen.scss */
+  .event:after {
+    display: block;
+    content: ' ';
+    height: 9px;
+    width: 9px;
+    background: #fffefd;
+    border-radius: 50%;
+    position: absolute;
+    left: -5%;
+    top: 1.5em;
+    border: 2px solid white;
+  }
+}
+/* line 188, ../sass/screen.scss */
+.event:nth-child(2n):after {
+  right: -5%;
+  /* reset the standard declaration I defined before*/
+  left: auto;
+}
+
+/* line 195, ../sass/screen.scss */
+.footer {
+  clear: both;
+}
+
+/* line 199, ../sass/screen.scss */
+.post {
+  float: left;
+  margin: 0px auto;
+  width: 699px;
+  overflow: hidden;
+  height: auto;
+  position: relative;
+  padding: 0px;
+  border-right: thick dashed darksalmon;
+  margin-left: 1em;
+}
+/* line 210, ../sass/screen.scss */
+.post h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 0em;
+}
+/* line 216, ../sass/screen.scss */
+.post h3 {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+/* line 220, ../sass/screen.scss */
+.post .text-post {
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  padding-right: 1em;
+  font-size: 21px;
+}
+/* line 230, ../sass/screen.scss */
+.post .img-page-post {
+  width: 700px;
+  height: 50px;
+}
